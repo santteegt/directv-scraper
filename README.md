@@ -2,17 +2,24 @@
 
 Scraping the Latin America DirecTV programming guide by implementing a spider job using Scrapy.
 
-### Setup instructions
+### Software Requirements
+
+* Python 2/3
+* pip
+* Scrapy
+* Docker
+
+### Setup Instructions
 
 ```
 ~$ pip install scrapy scrapyd scrapyd-client
 ```
 
-### Spider configuration
+### Spider Configuration
 
 * TV_CHANNEL_RAGE: set the range of channels to scrape programming info Default value is `(130, 600)`. You can modify this value in [directv_spider.py](directvscraper/spiders/directv_spider.py) file
 
-### Running locally
+### Running Locally
 
 ```
 ~$ scrapy crawl directv -o directv.jl
